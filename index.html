@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="form">
+      <label>Principal Loan Amount</label>
+      <input type="number" name="principal" required />
+      <label>Interest Rate ( % )</label>
+      <input type="number" name="interest" required />
+      <label>Length of Loan ( Years )</label>
+      <input type="number" name="years" required />
+
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <caption>
+      M = P(i(1+i)n)/((1+i)n - 1)
+      <li>M: Monthly mortgage payment</li>
+      <li>P: Loan amount</li>
+      <li>i: Monthly interest rate (APR / 12)</li>
+      <li>n: Total number of payments (loan term in years x 12)</li>
+    </caption>
+    <script src="index.js" />
+  </body>
+</html>
